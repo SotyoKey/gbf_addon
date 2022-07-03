@@ -7,7 +7,18 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('popup') as HTMLElement
 );
+
+const option = ReactDOM.createRoot(
+  document.getElementById('options') as HTMLElement
+);
+
 root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+option.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
