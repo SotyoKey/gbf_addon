@@ -1,6 +1,13 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "manifest_version": 1,
+  "short_name": "pre_treasure_cnt",
+  "name": "gbf_pre_treasure_counter",
+  "version": "0.0.1",
+  "description": "グラブルの青箱をカウントする拡張機能",
+  "action": {
+    "default_title": "gbf青箱カウンター",
+    "default_popup": "popup.html"
+  },
   "icons": [
     {
       "src": "favicon.ico",
