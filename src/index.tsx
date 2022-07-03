@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 
 const option = ReactDOM.createRoot(
-  document.getElementById('options') || document.createElement('div')
+  document.getElementById('options') as HTMLElement
 );
 
 root.render(
