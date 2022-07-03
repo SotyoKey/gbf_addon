@@ -5,11 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('popup') as HTMLElement
+  document.getElementById('popup') || document.createElement('div')
 );
 
 const option = ReactDOM.createRoot(
-  document.getElementById('options') as HTMLElement
+  document.getElementById('options') || document.createElement('div')
 );
 
 root.render(
