@@ -18,7 +18,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && yarn rename:popup && yarn rename:options",
+    "build": "yarn build:react && yarn build:content_scripts",
+    "build:react": "react-scripts build && yarn rename:popup && yarn rename:options",
+    "build:content_scripts": "webpack --config webpack.content_scripts.config.ts",
     "rename:popup": "sed 's/root/popup/' build/index.html > build/popup.html",
     "rename:options": "sed -e 's/root/options/' build/index.html > build/options.html",
     "test": "react-scripts test",
@@ -43,6 +45,15 @@
     ]
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.191"
-  }
+    "@types/chrome": "^0.0.191",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:SotyoKey/gbf_addon.git",
+  "author": "SotyoKey <sotyokeylvy@gmail.com>",
+  "license": "MIT"
 }

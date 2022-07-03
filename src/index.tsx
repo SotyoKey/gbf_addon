@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Popup from './Popup';
+import Option from './Option';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -14,13 +15,13 @@ const option = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Popup />
   </React.StrictMode>
 );
 
 option.render(
   <React.StrictMode>
-    <App />
+    <Option />
   </React.StrictMode>
 );
 
